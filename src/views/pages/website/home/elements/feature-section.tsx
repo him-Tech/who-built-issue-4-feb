@@ -3,6 +3,7 @@ import sec2icon2 from "src/assets/icon/sec2img3.png";
 import sec2icon1 from "src/assets/sec2img.png";
 import startimg from "src/assets/star.png";
 import { Button } from "src/views/components/elements/Button";
+import { Audience, textColorVariants } from "../../../../Audience";
 
 export const FeaturesSection = () => {
   return (
@@ -15,13 +16,16 @@ export const FeaturesSection = () => {
           className="box11 group flex w-full max-w-[550px] flex-col-reverse items-center justify-between gap-[20px] rounded-[30px] bg-[#14233A] px-[40px] py-[20px] max-[1279px]:max-w-[460px] max-[1279px]:py-12 max-[1024px]:max-w-[400px] lg:items-center lg:gap-0 lg:rounded-[50px] lg:px-[40px] lg:py-16 xl:flex-row 1500:max-w-[610px] min-[1600px]:px-[67px] min-[1600px]:py-[73px]"
         >
           <div className="max-[1200px]text-center flex-col items-center max-[1279px]:flex">
-            <h1 className="font-mich text-[28px] font-[400] lg:text-[36px]">Get Paid</h1>
+            <h1 className="font-mich text-[28px] font-[400] lg:text-[36px]">
+              <span className={`${textColorVariants[Audience.DEVELOPER]}`} > Developers </span>
+            </h1>
+
             <h2 className="font-most mt-[20px] w-full text-[16px] font-[400] leading-[1.5] max-[1279px]:text-center">
               Stop begging for donations! <br /> Fund your future. Have a Say
             </h2>
             <div className="mt-[42px]">
               <Button audience="DEVELOPER" level="SECONDARY" size="MEDIUM" asChild>
-                <Link to="/developer">DEVELOPERS</Link>
+                <Link to="/developer">Get Paid</Link>
               </Button>
             </div>
           </div>
@@ -39,14 +43,16 @@ export const FeaturesSection = () => {
           className="box22 group flex w-full max-w-[550px] flex-col-reverse items-center justify-between rounded-[30px] bg-[#14233A] px-[40px] py-[20px] max-[1279px]:max-w-[460px] max-[1279px]:py-12 max-[1024px]:max-w-[400px] lg:items-center lg:gap-0 lg:rounded-[50px] lg:px-[40px] lg:py-16 xl:flex-row 1500:max-w-[610px] min-[1600px]:px-[67px] min-[1600px]:py-[73px]"
         >
           <div className="flex-col items-center max-[1279px]:flex max-[1200px]:text-center">
-            <h1 className="font-mich text-nowrap text-[28px] font-[400] lg:text-[36px]">Get Support</h1>
+            <h1 className="font-mich text-nowrap text-[28px] font-[400] lg:text-[36px]">
+              <span className={`${textColorVariants[Audience.USER]}`} > Entreprise </span>
+            </h1>
             <h2 className="font-most mt-[20px] w-full text-[16px] font-[400] leading-[1.5] max-[1279px]:text-center">
               {" "}
               Forget the far west! Secure your <br /> platform, secure your business.
             </h2>
             <div className="mt-[42px]">
               <Button audience="USER" level="SECONDARY" size="MEDIUM" asChild>
-                <Link to="/user">OPEN SOURCE USERS</Link>
+                <Link to="/user"> Get Support</Link>
               </Button>
             </div>
           </div>

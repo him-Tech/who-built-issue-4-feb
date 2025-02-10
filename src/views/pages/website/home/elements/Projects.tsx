@@ -34,7 +34,7 @@ export function Projects(props: ProjectsProps) {
               </>
             ) : (
               repositories.map(([owner, repository]) => (
-                <Cards key={`${owner.id.login}-${repository.id.githubId}`} owner={owner} repository={repository} audience={Audience.ALL} />
+                <Cards key={`${owner.id.login}-${repository.id.githubId}`} owner={owner} repository={repository} audience={Audience.ALL} action={"TODO lolo"} to={"/TODOlolo"} />
               ))
             )}
           </div>
