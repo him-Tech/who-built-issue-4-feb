@@ -74,9 +74,9 @@ export function Payment(props: PaymentProps) {
 
               <PriceItems />
             </div>
-            <div className="bg-[#14233A] rounded-[30px] p-4 mt-4">
-              <Card />
-            </div>
+            {/*<div className="bg-[#14233A] rounded-[30px] p-4 mt-4">*/}
+            {/*  <Card />*/}
+            {/*</div>*/}
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { BookACallButton } from "../../../../components/elements/BookACallButton";
+import { Button } from "../../../../components";
 
 interface BookACallProps {}
 
@@ -11,6 +12,9 @@ export function BookACall(props: BookACallProps) {
         Never get stuck again. Never fork again. Meet your deadline.
       </h4>
       <div className="relative !mt-7 md:!mt-12 flex justify-center items-center">
+        <Button audience="USER" level="SECONDARY" size="LARGE" className="!capitalize" asChild>
+          Register
+        </Button>
         <BookACallButton />
       </div>
     </section>

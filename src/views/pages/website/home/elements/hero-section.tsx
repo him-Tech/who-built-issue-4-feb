@@ -13,9 +13,9 @@ export const HeroSection = () => {
           Building the foundation of open source 3.0
         </h1>
 
-        <Button audience="ALL" level={"PRIMARY"} size={"LARGE"} asChild>
-          <Link to="/projects">GET STARTED</Link>
-        </Button>
+        {/*<Button audience="ALL" level={"PRIMARY"} size={"LARGE"} asChild>*/}
+        {/*  <Link to="/projects">GET STARTED</Link>*/}
+        {/*</Button>*/}
       </div>
       {/* Right  */}
       <div className="w-full max-w-[700px] lg:max-w-none">
